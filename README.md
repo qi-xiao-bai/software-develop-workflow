@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Docs-Implementation%20First-8b5cf6" alt="Implementation First Docs">
 </p>
 
-# Software Develop Workflow
+# Software Development Workflow
 
 <p align="center">
   A generic software development workflow package for AI coding agents across languages, frameworks, and project types.<br>
@@ -24,7 +24,7 @@
 
 ### Overview
 
-Software Develop Workflow is a generic development workflow package for AI coding agents.
+Software Development Workflow is a generic development workflow package for AI coding agents.
 
 Its purpose is not only to help an agent write code, but also to make it behave in a way that fits real repositories: read the right context first, preserve local conventions, choose comment language according to the project, document current implementation clearly when requested, and avoid careless refactors or risky actions.
 
@@ -163,7 +163,7 @@ Start from `prompt.md` or `prompt.zh-CN.md`, then continue with the matching wor
 
 ### 项目概述
 
-Software Develop Workflow 是一个面向 AI 编码代理的通用软件开发工作流仓库。
+Software Development Workflow 是一个面向 AI 编码代理的通用软件开发工作流仓库。
 
 它的目标不只是“让代理会写代码”，而是让代理在真实仓库里按照更像工程协作的方式工作：先读对上下文、遵守项目现有习惯、按项目语言环境写注释、需要时把当前实现讲清楚、避免随手大重构和高风险操作。
 

@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Docs-Implementation%20First-8b5cf6" alt="Implementation First Docs">
 </p>
 
-# Software Develop for deer-flow
+# Software Development Workflow for deer-flow
 
 <p align="center">
   A structured deer-flow adapter for a generic software development workflow across languages and frameworks.<br>

@@ -3,7 +3,7 @@ name: software-develop
 description: Generic software development workflow and guardrails across languages and frameworks. Use when Codex is asked to develop, modify, debug, refactor, review, or maintain code in an existing project and the user wants disciplined context reading, conservative edits, project-aligned comments, fuller development-document guidance, controlled backups, and clear delivery notes.
 ---
 
-# Software Develop
+# Software Development Workflow
 
 This is a standalone Codex skill package.
 

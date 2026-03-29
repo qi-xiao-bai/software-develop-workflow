@@ -2,6 +2,8 @@
 
 This document is the main workflow for disciplined software development across languages and frameworks.
 
+It is not a lightweight prompt wrapper. It is the primary operating contract for this deer-flow adapter. The goal is to make deer-flow work like a careful implementation collaborator in real repositories instead of a one-shot code generator.
+
 ## Strict Trigger Conditions
 
 This workflow must be applied strictly when the user's task clearly asks for code-changing work, especially requests containing intent such as:
@@ -32,11 +34,36 @@ Apply the same strict behavior for equivalent Chinese intent, including:
 4. Keep comments, logs, tests, and documentation aligned with the existing codebase.
 5. Treat validation and delivery notes as part of the implementation work.
 
+## What This Workflow Is Trying To Prevent
+
+Many development tasks go wrong not because the code is uniquely difficult, but because the implementation process becomes careless. Common failure modes include:
+
+- editing code before reading the active task context
+- solving a narrow issue with a broad refactor
+- writing comments in the wrong language for the module
+- adding logs that do not match the repository's existing debugging style
+- updating docs without being asked
+- delivering work without explaining assumptions, validation, or residual risks
+
+This workflow exists to turn those common failure modes into explicit boundaries.
+
 ## Required Workflow
 
 ### 1. Identify the project root
 
-Use the user-provided path or repository markers such as `.git/`, `README.md`, `package.json`, `pyproject.toml`, `Cargo.toml`, `go.mod`, `pom.xml`, `build.gradle`, or other language-specific root markers.
+Use the user-provided path or repository markers such as:
+
+- `.git/`
+- `README.md`
+- `package.json`
+- `pyproject.toml`
+- `Cargo.toml`
+- `go.mod`
+- `pom.xml`
+- `build.gradle`
+- other language-specific root markers
+
+The project root matters because documentation locations, config files, test entry points, script paths, and backup rules usually depend on it.
 
 ### 2. Read the most relevant context first
 
@@ -73,6 +100,8 @@ At minimum, capture:
 - do not perform unrelated refactors
 - do not remove unrelated logic, comments, tests, fixtures, configuration, or user changes
 
+If the cleanest fix truly requires a broader change, recognize that tradeoff explicitly instead of quietly widening the task.
+
 ## Comment Rules
 
 Follow the strongest local signal for comment language and comment style.
@@ -100,6 +129,24 @@ When adding logs or debug statements:
 - avoid duplicate logs that say the same thing before and after the same block
 - do not introduce noisy debug output into intentionally quiet paths unless required by the task
 
+Logs should help future debugging, not merely prove that execution reached a line.
+
+## Validation Rules
+
+Validation is not an optional afterthought. It is part of the task.
+
+When possible:
+
+- run the most relevant existing tests near the changed area
+- do focused validation first before broader checks
+- prefer project-native test and verification commands
+- report what was validated and what was not
+
+If validation cannot be run, say so explicitly and explain:
+
+- why validation could not be run
+- what the most likely remaining risk is
+
 ## Documentation Maintenance
 
 Only update development documents or technical notes when explicitly requested.
@@ -110,6 +157,8 @@ When updating them:
 2. Focus on the core files, modules, classes, or functions.
 3. Include both a runtime flow section and a method or call chain section.
 4. In the method or call chain, every line should include parameters, return value, and purpose.
+
+Documentation tasks should use the templates and writing guides in `references/` instead of improvising a thin summary.
 
 ## Backups and Risky Actions
 
@@ -129,3 +178,13 @@ When finishing a task, report:
 - where logs or debug statements were added, if any
 - whether documentation was intentionally left untouched
 - whether validation was run, and if not, why not
+
+## Expected Outcome
+
+If this workflow is followed well, the final result should feel like careful repository maintenance:
+
+- the change is easy to understand
+- the scope stays controlled
+- the style matches the project
+- the documentation story is clear
+- the next maintainer does not have to reverse-engineer intent from the diff alone

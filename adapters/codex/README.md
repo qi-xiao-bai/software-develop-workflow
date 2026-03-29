@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Docs-Implementation%20First-8b5cf6" alt="Implementation First Docs">
 </p>
 
-# Software Develop for Codex
+# Software Development Workflow for Codex
 
 <p align="center">
   A structured Codex skill for disciplined software development across languages and frameworks.<br>

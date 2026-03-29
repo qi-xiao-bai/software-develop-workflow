@@ -3,7 +3,7 @@ name: software-develop
 description: 通用软件开发流程与协作约束。适用于 Codex 在现有项目中进行开发、修改、调试、重构、Review 或维护代码时，需要先读取关键上下文、保守改动、按项目语言习惯写注释、按需维护开发文档、按需备份源文件，并在交付时明确说明改动依据与验证情况的场景。
 ---
 
-# Software Develop
+# Software Development Workflow
 
 这是一个可独立使用的 Codex skill 包。
 
