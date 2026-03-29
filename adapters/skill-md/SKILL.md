@@ -10,7 +10,7 @@ This is a standalone generic SKILL.md-compatible skill package.
 
 Use this directory in any platform that loads skills from a `SKILL.md` entry file.
 
-For the Chinese version, see [SKILL_CN.md](SKILL_CN.md).
+Chinese files: [translations/](translations/).
 
 ## What This Skill Enforces
 
@@ -48,14 +48,15 @@ The same rule applies to equivalent Chinese intent such as:
 ## Resources
 
 - Workflow guide: [workflow.md](workflow.md)
-- Chinese workflow guide: [workflow.zh-CN.md](workflow.zh-CN.md)
 - Comment language policy: [references/comment-language-policy.md](references/comment-language-policy.md)
-- Chinese comment language policy: [references/注释语言策略.md](references/注释语言策略.md)
-- Chinese development document template: [references/开发文档模板.md](references/开发文档模板.md)
 - English development document template: [references/development-doc-template.md](references/development-doc-template.md)
 - Development document writing guide: [references/development-doc-writing-guide.md](references/development-doc-writing-guide.md)
-- Chinese development document writing guide: [references/开发文档写作说明.md](references/开发文档写作说明.md)
 - Backup helper script: [scripts/backup_source_file.py](scripts/backup_source_file.py)
+
+Chinese files:
+
+- Chinese skill notes: [translations/SKILL_CN.md](translations/SKILL_CN.md)
+- Chinese workflow guide: [translations/workflow.zh-CN.md](translations/workflow.zh-CN.md)
 
 ## Required Workflow
 

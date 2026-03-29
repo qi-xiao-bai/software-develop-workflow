@@ -56,26 +56,29 @@ This package turns those concerns into explicit execution rules.
 skill-package/
 ├── README.md
 ├── SKILL.md
-├── SKILL_CN.md
 ├── workflow.md
-├── workflow.zh-CN.md
 ├── agents/
 │   └── openai.yaml
 ├── references/
 │   ├── comment-language-policy.md
 │   ├── development-doc-template.md
-│   ├── development-doc-writing-guide.md
-│   ├── 开发文档模板.md
-│   └── 开发文档写作说明.md
-└── scripts/
-    └── backup_source_file.py
+│   └── development-doc-writing-guide.md
+├── scripts/
+│   └── backup_source_file.py
+└── translations/
+    ├── SKILL_CN.md
+    ├── workflow.zh-CN.md
+    └── references/
+        ├── 开发文档模板.md
+        ├── 开发文档写作说明.md
+        └── 注释语言策略.md
 ```
 
 ### How To Use
 
 1. Place this directory under the target platform's skill directory.
 2. Use [SKILL.md](./SKILL.md) as the primary entry file.
-3. Keep [SKILL_CN.md](./SKILL_CN.md) as the Chinese reference version when you want a bilingual companion copy.
+3. Chinese files are under [translations/](./translations).
 4. Read the matching workflow file.
 5. Use the reference files only when the task actually needs them.
 6. Keep the `scripts/` helper available if you want backup automation.
@@ -126,26 +129,29 @@ skill-package/
 skill-package/
 ├── README.md
 ├── SKILL.md
-├── SKILL_CN.md
 ├── workflow.md
-├── workflow.zh-CN.md
 ├── agents/
 │   └── openai.yaml
 ├── references/
 │   ├── comment-language-policy.md
 │   ├── development-doc-template.md
-│   ├── development-doc-writing-guide.md
-│   ├── 开发文档模板.md
-│   └── 开发文档写作说明.md
-└── scripts/
-    └── backup_source_file.py
+│   └── development-doc-writing-guide.md
+├── scripts/
+│   └── backup_source_file.py
+└── translations/
+    ├── SKILL_CN.md
+    ├── workflow.zh-CN.md
+    └── references/
+        ├── 开发文档模板.md
+        ├── 开发文档写作说明.md
+        └── 注释语言策略.md
 ```
 
 ### 使用方式
 
 1. 把这个目录放到目标平台的技能目录里。
 2. 以 [SKILL.md](./SKILL.md) 作为主入口文件。
-3. 保留 [SKILL_CN.md](./SKILL_CN.md) 作为中文对照版，方便做双语维护。
+3. 中文文件位于 [translations/](./translations) 目录下。
 4. 继续读取对应的工作流文件。
 5. 只有任务真的需要时，再去加载参考资料。
 6. 如果需要备份脚本能力，就把 `scripts/` 一起保留。
