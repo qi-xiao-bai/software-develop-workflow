@@ -1,15 +1,10 @@
----
-name: software-develop
-description: Generic software development workflow and guardrails across languages and frameworks. Use when Codex is asked to develop, modify, debug, refactor, review, or maintain code in an existing project and the user wants disciplined context reading, conservative edits, project-aligned comments, fuller development-document guidance, controlled backups, and clear delivery notes.
----
-
 # Software Development Workflow
 
-This is a standalone Codex skill package.
+This is a standalone Claude Code project-instructions package.
 
 Chinese files: [translations/](translations/).
 
-## What This Skill Enforces
+## What This Adapter Enforces
 
 1. Read the most relevant project context before making edits.
 2. Prefer task-specific development documents when they exist.
@@ -22,7 +17,7 @@ Chinese files: [translations/](translations/).
 
 ## Trigger Conditions
 
-Strictly apply this skill when the user's task includes implementation-oriented intent such as:
+Strictly apply this workflow when the user's task includes implementation-oriented intent such as:
 
 - modify
 - implement
@@ -51,7 +46,7 @@ The same rule applies to equivalent Chinese intent such as:
 
 Chinese files:
 
-- Chinese skill notes: [translations/SKILL_CN.md](translations/SKILL_CN.md)
+- Chinese instructions: [translations/CLAUDE_CN.md](translations/CLAUDE_CN.md)
 - Chinese workflow guide: [translations/workflow.zh-CN.md](translations/workflow.zh-CN.md)
 
 ## Required Workflow

@@ -7,7 +7,7 @@ description: 通用软件开发流程与协作约束。适用于 Codex 在现有
 
 这是一个可独立使用的 Codex skill 包。
 
-英文版本见 [SKILL.md](SKILL.md)。
+英文版本见 [../SKILL.md](../SKILL.md)。
 
 ## 这个 Skill 强制约束什么
 
@@ -45,14 +45,14 @@ description: 通用软件开发流程与协作约束。适用于 Codex 在现有
 ## 资源
 
 - 工作流说明：[workflow.zh-CN.md](workflow.zh-CN.md)
-- 英文工作流说明：[workflow.md](workflow.md)
-- 英文注释策略：[references/comment-language-policy.md](references/comment-language-policy.md)
+- 英文工作流说明：[../workflow.md](../workflow.md)
+- 英文注释策略：[../references/comment-language-policy.md](../references/comment-language-policy.md)
 - 中文注释策略：[references/注释语言策略.md](references/注释语言策略.md)
 - 中文开发文档模板：[references/开发文档模板.md](references/开发文档模板.md)
-- 英文开发文档模板：[references/development-doc-template.md](references/development-doc-template.md)
-- 英文开发文档写作说明：[references/development-doc-writing-guide.md](references/development-doc-writing-guide.md)
+- 英文开发文档模板：[../references/development-doc-template.md](../references/development-doc-template.md)
+- 英文开发文档写作说明：[../references/development-doc-writing-guide.md](../references/development-doc-writing-guide.md)
 - 中文开发文档写作说明：[references/开发文档写作说明.md](references/开发文档写作说明.md)
-- 备份脚本：[scripts/backup_source_file.py](scripts/backup_source_file.py)
+- 备份脚本：[../scripts/backup_source_file.py](../scripts/backup_source_file.py)
 
 ## 必须遵循的工作流
 

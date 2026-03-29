@@ -60,20 +60,26 @@ software-develop/
 │   ├── codex/
 │   │   ├── README.md
 │   │   ├── SKILL.md
-│   │   ├── SKILL_CN.md
 │   │   ├── workflow.md
-│   │   ├── workflow.zh-CN.md
 │   │   ├── agents/
 │   │   │   └── openai.yaml
 │   │   ├── references/
-│   │   └── scripts/
+│   │   ├── scripts/
+│   │   └── translations/
+│   ├── claude-code/
+│   │   ├── README.md
+│   │   ├── CLAUDE.md
+│   │   ├── workflow.md
+│   │   ├── references/
+│   │   ├── scripts/
+│   │   └── translations/
 │   └── skill-md/
 │       ├── README.md
 │       ├── SKILL.md
 │       ├── workflow.md
-│       ├── workflow.zh-CN.md
 │       ├── references/
-│       └── scripts/
+│       ├── scripts/
+│       └── translations/
 ├── LICENSE.txt
 ├── LICENSE_CN.txt
 └── .gitignore
@@ -86,6 +92,7 @@ This repository uses a multi-adapter structure.
 Each platform directory is intentionally self-contained, which means:
 
 - `adapters/codex` can be used directly as a Codex skill package
+- `adapters/claude-code` can be used directly as a Claude Code instructions package
 - `adapters/skill-md` can be used directly as a generic `SKILL.md`-compatible skill package
 - each adapter keeps its own workflow notes, reference files, and helper scripts
 
@@ -143,6 +150,14 @@ Use:
 
 If you want to install it with a skill installer, point the installer at that directory.
 
+#### Claude Code
+
+Use:
+
+- [adapters/claude-code](./adapters/claude-code)
+
+Copy `CLAUDE.md` into the target project root and keep the linked files alongside it if you want the full package available.
+
 #### SKILL.md Platforms
 
 Use:
@@ -198,20 +213,26 @@ software-develop/
 │   ├── codex/
 │   │   ├── README.md
 │   │   ├── SKILL.md
-│   │   ├── SKILL_CN.md
 │   │   ├── workflow.md
-│   │   ├── workflow.zh-CN.md
 │   │   ├── agents/
 │   │   │   └── openai.yaml
 │   │   ├── references/
-│   │   └── scripts/
+│   │   ├── scripts/
+│   │   └── translations/
+│   ├── claude-code/
+│   │   ├── README.md
+│   │   ├── CLAUDE.md
+│   │   ├── workflow.md
+│   │   ├── references/
+│   │   ├── scripts/
+│   │   └── translations/
 │   └── skill-md/
 │       ├── README.md
 │       ├── SKILL.md
 │       ├── workflow.md
-│       ├── workflow.zh-CN.md
 │       ├── references/
-│       └── scripts/
+│       ├── scripts/
+│       └── translations/
 ├── LICENSE.txt
 ├── LICENSE_CN.txt
 └── .gitignore
@@ -224,6 +245,7 @@ software-develop/
 每个平台目录都是自包含的独立包，这意味着：
 
 - `adapters/codex` 可以直接当作 Codex skill 包使用
+- `adapters/claude-code` 可以直接当作 Claude Code 指令包使用
 - `adapters/skill-md` 可以直接当作通用 `SKILL.md` 技能包使用
 - 每个适配器都保留自己的 workflow、reference 和辅助脚本
 
@@ -280,6 +302,14 @@ software-develop/
 - [adapters/codex](./adapters/codex)
 
 如果使用 skill installer，就把这个目录作为安装目标。
+
+#### Claude Code
+
+使用：
+
+- [adapters/claude-code](./adapters/claude-code)
+
+把 `CLAUDE.md` 复制到目标项目根目录；如果希望整套说明、参考资料和脚本都能继续被引用，就把相关文件一起保留在相邻位置。
 
 #### `SKILL.md` 平台
 
