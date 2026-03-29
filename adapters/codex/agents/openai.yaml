@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Develop (Codex Adapter)"
+  short_description: "Codex adapter for a generic development workflow / 通用开发工作流的 Codex 适配层"
+  default_prompt: "Use $software-develop to apply the generic development workflow in this Codex task: read the most relevant project context first, follow the local comment language, and keep changes conservative."
