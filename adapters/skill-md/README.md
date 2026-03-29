@@ -59,6 +59,8 @@ skill-package/
 ├── SKILL_CN.md
 ├── workflow.md
 ├── workflow.zh-CN.md
+├── agents/
+│   └── openai.yaml
 ├── references/
 │   ├── comment-language-policy.md
 │   ├── development-doc-template.md
@@ -127,6 +129,8 @@ skill-package/
 ├── SKILL_CN.md
 ├── workflow.md
 ├── workflow.zh-CN.md
+├── agents/
+│   └── openai.yaml
 ├── references/
 │   ├── comment-language-policy.md
 │   ├── development-doc-template.md

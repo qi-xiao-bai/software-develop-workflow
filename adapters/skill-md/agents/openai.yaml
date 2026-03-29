@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Software Development Workflow'
+  short_description: 'Generic SKILL.md-compatible development workflow / 通用 SKILL.md 开发工作流包'
+  default_prompt: 'Use $software-develop to apply the generic software development workflow in this task: read the most relevant project context first, follow the local comment language, and keep changes conservative.'
