@@ -2,7 +2,7 @@
 
 This document is the main workflow for disciplined software development across languages and frameworks.
 
-It is not a lightweight prompt wrapper. It is the primary operating contract for this deer-flow adapter. The goal is to make deer-flow work like a careful implementation collaborator in real repositories instead of a one-shot code generator.
+It is not a lightweight prompt wrapper. It is the primary operating contract for this generic SKILL.md-compatible package. The goal is to make a coding agent work like a careful implementation collaborator in real repositories instead of a one-shot code generator.
 
 ## Strict Trigger Conditions
 

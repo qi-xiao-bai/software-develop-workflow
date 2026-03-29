@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License: MIT">
   <img src="https://img.shields.io/badge/Workflow-Generic%20Development-1f6feb" alt="Generic Development Workflow">
-  <img src="https://img.shields.io/badge/Multi--Adapter-Codex%20%7C%20deer--flow-0f766e" alt="Multi Adapter">
+  <img src="https://img.shields.io/badge/Multi--Adapter-Codex%20%7C%20SKILL.md-0f766e" alt="Multi Adapter">
   <img src="https://img.shields.io/badge/Comments-Project%20Aligned-b45309" alt="Project Aligned Comments">
   <img src="https://img.shields.io/badge/Docs-Implementation%20First-8b5cf6" alt="Implementation First Docs">
 </p>
@@ -67,10 +67,9 @@ software-develop/
 │   │   │   └── openai.yaml
 │   │   ├── references/
 │   │   └── scripts/
-│   └── deer-flow/
+│   └── skill-md/
 │       ├── README.md
-│       ├── prompt.md
-│       ├── prompt.zh-CN.md
+│       ├── SKILL.md
 │       ├── workflow.md
 │       ├── workflow.zh-CN.md
 │       ├── references/
@@ -87,7 +86,7 @@ This repository uses a multi-adapter structure.
 Each platform directory is intentionally self-contained, which means:
 
 - `adapters/codex` can be used directly as a Codex skill package
-- `adapters/deer-flow` can be used directly as a deer-flow workflow package
+- `adapters/skill-md` can be used directly as a generic `SKILL.md`-compatible skill package
 - each adapter keeps its own workflow notes, reference files, and helper scripts
 
 The reason for this design is simple: an installable or reusable package should be complete by itself. Users should not have to understand hidden shared directories or internal packaging assumptions before using it.
@@ -144,13 +143,13 @@ Use:
 
 If you want to install it with a skill installer, point the installer at that directory.
 
-#### deer-flow
+#### SKILL.md Platforms
 
 Use:
 
-- [adapters/deer-flow](./adapters/deer-flow)
+- [adapters/skill-md](./adapters/skill-md)
 
-Start from `prompt.md` or `prompt.zh-CN.md`, then continue with the matching workflow file.
+Start from `SKILL.md`, then continue with the matching workflow file.
 
 ### License
 
@@ -206,10 +205,9 @@ software-develop/
 │   │   │   └── openai.yaml
 │   │   ├── references/
 │   │   └── scripts/
-│   └── deer-flow/
+│   └── skill-md/
 │       ├── README.md
-│       ├── prompt.md
-│       ├── prompt.zh-CN.md
+│       ├── SKILL.md
 │       ├── workflow.md
 │       ├── workflow.zh-CN.md
 │       ├── references/
@@ -226,7 +224,7 @@ software-develop/
 每个平台目录都是自包含的独立包，这意味着：
 
 - `adapters/codex` 可以直接当作 Codex skill 包使用
-- `adapters/deer-flow` 可以直接当作 deer-flow 工作流包使用
+- `adapters/skill-md` 可以直接当作通用 `SKILL.md` 技能包使用
 - 每个适配器都保留自己的 workflow、reference 和辅助脚本
 
 这样设计的原因很直接：一个可安装、可复用的包应该自己就是完整的，使用者不应该先去理解一堆隐藏共享目录或内部打包假设，才能知道怎么用。
@@ -283,13 +281,13 @@ software-develop/
 
 如果使用 skill installer，就把这个目录作为安装目标。
 
-#### deer-flow
+#### `SKILL.md` 平台
 
 使用：
 
-- [adapters/deer-flow](./adapters/deer-flow)
+- [adapters/skill-md](./adapters/skill-md)
 
-从 `prompt.md` 或 `prompt.zh-CN.md` 开始，再继续读取对应的 workflow 文件。
+从 `SKILL.md` 开始，再继续读取对应的 workflow 文件。
 
 ### 许可证
 
