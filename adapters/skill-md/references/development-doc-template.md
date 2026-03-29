@@ -13,8 +13,6 @@ These headings are the fixed backbone of the document and must remain:
 
 ## Functional Goal
 
-## Current Progress
-
 ## Document Purpose
 
 ## Code Layers and Responsibilities
@@ -27,21 +25,21 @@ These headings are the fixed backbone of the document and must remain:
 
 ## Full Process Flow
 
-## Method Call Chain
-
 ## Current Characteristics and Limitations
 
 ## Edge Cases and Special Notes
 
-## Maintenance and Extension Guidance
+## Maintenance, Risks, and Follow-up
 
-## Known Issues and Improvement Ideas
+### Maintenance and Extension Suggestions
 
-## Current Error Handling
+### Current Issues and Optimization Directions
 
-## Pending Work
+### Exception and Error Handling
 
-## Known Risks and Notes
+### Follow-up Work
+
+### Risks and Notes
 
 ## Summary
 ```
@@ -53,17 +51,6 @@ These headings are the fixed backbone of the document and must remain:
 Explain what problem the feature solves and what result it is expected to produce.
 
 Keep this section focused on purpose rather than implementation detail.
-
-### Current Progress
-
-Describe the real current state.
-
-This should make clear:
-
-- what is already complete
-- what is only partially complete
-- what is still missing
-- how much validation already exists
 
 ### Document Purpose
 
@@ -118,18 +105,6 @@ Describe the whole flow in plain language before switching to detailed call-leve
 
 This section should help the reader understand the big picture first.
 
-### Method Call Chain
-
-This section is mandatory and should be detailed.
-
-Each key step should ideally include:
-
-- input parameters
-- return value
-- purpose
-
-If the chain is long, start with a short overall summary first.
-
 ### Current Characteristics and Limitations
 
 Be honest about the implementation as it exists today, for example:
@@ -144,7 +119,13 @@ Be honest about the implementation as it exists today, for example:
 
 Document special branches, business exceptions, non-default paths, and any behavior that a future maintainer could easily miss.
 
-### Maintenance and Extension Guidance
+### Maintenance, Risks, and Follow-up
+
+Use this as one combined section for maintenance guidance, known issues, error handling, unfinished work, and risks.
+
+Keep the section split into the following subsections:
+
+#### Maintenance and Extension Suggestions
 
 Explain:
 
@@ -153,13 +134,15 @@ Explain:
 - which constraints must remain true
 - where future maintainers are most likely to break things
 
-### Known Issues and Improvement Ideas
+#### Current Issues and Optimization Directions
 
 Document the weaknesses already known today and the improvements worth making next.
 
-Be concrete whenever possible.
+Do not stop at general labels such as "can be optimized later" or "coupling is high".
 
-### Current Error Handling
+State which method, module, branch, query, dependency, or behavior is weak and why it is a problem.
+
+#### Exception and Error Handling
 
 Explain:
 
@@ -169,16 +152,18 @@ Explain:
 - which failures retry, degrade, or stop execution
 - whether current logging is sufficient
 
-### Pending Work
+#### Follow-up Work
 
-Use this section for work that is explicitly known to be unfinished.
+Use this subsection for work that is explicitly known to be unfinished.
 
-This is different from known issues:
+This is different from current issues:
 
-- known issues are current weaknesses
-- pending work is unfinished implementation
+- current issues are existing weaknesses
+- follow-up work is unfinished implementation
 
-### Known Risks and Notes
+List concrete unfinished items such as missing branch support, missing retries, missing validation, missing fallback handling, or missing configuration cleanup.
+
+#### Risks and Notes
 
 Document the main risks for future maintenance, such as:
 
@@ -198,7 +183,39 @@ Close the document by restating:
 - the main risks
 - the main maintenance cautions
 
-## Extension Headings
+## Conditionally Required Headings
+
+The following headings are not mandatory for every document, but they become required under the right conditions:
+
+- `## Method Call Chain`
+  Use this for feature-specific development documents. It should usually be optional for whole-project overview documents.
+- `## Current Progress`
+  Add this heading when the document must explicitly state completed scope, partially completed scope, unfinished scope, or existing validation status.
+
+### Method Call Chain
+
+When included, this section should be detailed.
+
+Each key step should ideally include:
+
+- input parameters
+- return value
+- purpose
+
+If the chain is long, start with a short overall summary first.
+
+### Current Progress
+
+Describe the real current state.
+
+This should make clear:
+
+- what is already complete
+- what is only partially complete
+- what is still missing
+- how much validation already exists
+
+## Optional Extension Headings
 
 The following headings are optional and should only be added when the feature actually needs them:
 
@@ -209,7 +226,7 @@ The following headings are optional and should only be added when the feature ac
 - API or Message Contract Notes
 - Additional State Transition Notes
 
-These extension headings add clarity for complex features, but they do not replace the mandatory core structure.
+These extension headings add clarity for complex features, but they do not replace the mandatory core structure or the conditionally required headings above.
 
 ## Method Call Chain Example
 
